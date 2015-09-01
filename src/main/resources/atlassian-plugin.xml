@@ -1,0 +1,29 @@
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}" />
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+    </plugin-info>
+
+    <resource type="i18n" name="i18n" location="bamboo-utils"/>
+
+    <web-resource key="resources">
+        <transformation extension="js">
+            <transformer key="jsI18n"/>
+        </transformation>
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        <resource type="download" name="multiLabelUsageCount.js" location="report/multiLabelUsageCount.js"/>
+        <context>atl.general</context>
+    </web-resource>
+
+    <report key="multiLabelUsageCount" name="Multi Label Usage (count)"
+            class="ru.mail.bamboo.plugins.report.MultiLabelUsageCountCollector">
+        <description>Reports on the label usage for a specific label.</description>
+        <chartClass>ru.mail.bamboo.plugins.report.BuildSummaryMultiLabelUsageCountLineChart</chartClass>
+    </report>
+
+    <component-import key="applicationProperties" interface="com.atlassian.sal.api.ApplicationProperties" />
+    
+</atlassian-plugin>
