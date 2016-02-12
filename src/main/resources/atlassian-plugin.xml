@@ -9,6 +9,11 @@
 
     <resource type="i18n" name="i18n" location="bamboo-utils"/>
 
+    <rest key="bamboo-utils" path="/bamboo-utils" version="1.0" />
+
+    <component-import key="applicationProperties" interface="com.atlassian.sal.api.ApplicationProperties" />
+
+    <!-- Multi-label usage count -->
     <web-resource key="resources">
         <transformation extension="js">
             <transformer key="jsI18n"/>
@@ -23,7 +28,36 @@
         <description>Reports on the label usage for a specific label.</description>
         <chartClass>ru.mail.bamboo.plugins.report.BuildSummaryMultiLabelUsageCountLineChart</chartClass>
     </report>
+    <!-- Multi-label usage count -->
 
-    <component-import key="applicationProperties" interface="com.atlassian.sal.api.ApplicationProperties" />
-    
+    <!-- Predefined plan variables -->
+    <additionalBuildConfigurationPlugin key="predefinedVariables" name="Predefined Variables" class="ru.mail.bamboo.plugins.build.configuration.PredefinedVariablesConfigurationPlugin">
+        <description>Plugin to configure maximum number of concurrent builds for a plan</description>
+        <resource type="freemarker" name="edit" location="ru/mail/bamboo/plugins/build/configuration/editPredefinedVariablesConfigForPlan.ftl"/>
+    </additionalBuildConfigurationPlugin>
+
+    <buildDefinitionTransformer key="predefinedVariablesTransformer"
+                                name="Predefined Variables Build Configuration Transformer"
+                                class="ru.mail.bamboo.plugins.build.configuration.PredefinedVariablesConfigurationTransformer" />
+
+    <web-resource key="predefinedVariables-resources">
+        <transformation extension="js">
+            <transformer key="jsI18n"/>
+        </transformation>
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        <resource type="download" name="predefined-variables.css" location="ru/mail/bamboo/plugins/build/configuration/predefined-variables.css"/>
+        <resource type="download" name="predefined-variables-edit.js" location="ru/mail/bamboo/plugins/build/configuration/predefined-variables-edit.js"/>
+    </web-resource>
+
+    <web-resource key="predefinedVariables-run-customized-resources">
+        <transformation extension="js">
+            <transformer key="jsI18n"/>
+        </transformation>
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        <resource type="download" name="predefined-variables.css" location="ru/mail/bamboo/plugins/build/configuration/predefined-variables.css"/>
+        <resource type="download" name="predefined-variables-config-build.js" location="ru/mail/bamboo/plugins/build/configuration/predefined-variables-config-build.js"/>
+        <context>atl.general</context>
+    </web-resource>
+    <!-- Predefined plan variables -->
+
 </atlassian-plugin>
