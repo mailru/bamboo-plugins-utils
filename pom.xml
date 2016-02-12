@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ru.mail.bamboo.plugins</groupId>
     <artifactId>bamboo-utils</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1.2</version>
 
     <organization>
         <name>Andrey Molchanov | Mail.Ru Group</name>
@@ -71,7 +71,8 @@
         <bamboo.version>5.9.3</bamboo.version>
         <bamboo.data.version>5.3</bamboo.data.version>
         <amps.version>5.0.13</amps.version>
-        <useFastdevCli>false</useFastdevCli>
+        <!--<useFastdevCli>false</useFastdevCli>-->
+        <fastdev.mvn.command>/Applications/Atlassian/atlassian-plugin-sdk-6.1.0/apache-maven-3.2.1/bin/mvn</fastdev.mvn.command>
     </properties>
 
 </project>

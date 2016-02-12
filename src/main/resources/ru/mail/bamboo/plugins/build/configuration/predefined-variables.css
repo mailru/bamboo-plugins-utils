@@ -1,0 +1,34 @@
+.predefinedVariables-edit-panel .variables-list > thead {
+    border: 0 none;
+    clip: rect(0pt, 0pt, 0pt, 0pt);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+input.text.variable-set-name {
+    margin-left: 10px;
+    width: 244px;
+}
+
+.aui-button.aui-button-subtle.delete-variable-set {
+    margin-left: 16px;
+}
+
+.predefinedVariables-variable-set {
+    margin-bottom: 25px;
+}
+
+.custom-build .variables-list > tfoot .predefinedVariables-variables-set-override {
+    border: 0;
+    font-size: inherit;
+    line-height: 1;
+    margin-left: -100px;
+}
+
+#predefinedVariables-variables-set-select {
+    margin-left: 10px;
+}
