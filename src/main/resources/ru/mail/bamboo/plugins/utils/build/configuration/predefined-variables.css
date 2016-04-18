@@ -27,6 +27,7 @@ input.text.variable-set-name {
     font-size: inherit;
     line-height: 1;
     margin-left: -100px;
+    padding-left: 10px;
 }
 
 #predefinedVariables-variables-set-select {

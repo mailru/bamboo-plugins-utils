@@ -1,4 +1,4 @@
-package ru.mail.bamboo.plugins.build.configuration;
+package ru.mail.bamboo.plugins.utils.build.configuration;
 
 import com.atlassian.bamboo.plan.Plan;
 import com.atlassian.bamboo.plan.PlanHelper;

@@ -1,4 +1,4 @@
-package ru.mail.bamboo.plugins.report;
+package ru.mail.bamboo.plugins.utils.report;
 
 import com.atlassian.bamboo.charts.collater.TimePeriodCollater;
 import com.atlassian.bamboo.charts.collater.TimePeriodLabelUsageCountCollater;

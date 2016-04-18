@@ -109,7 +109,7 @@
                                     options: options,
                                     extraClasses: ''
                                 }) + '</td>';
-                                output += '<td style="text-align: left;"><a class="aui-button aui-button-link aui-style predefinedVariables-variables-set-override">' + AJS.I18n.getText('ru.mail.bamboo.plugins.build.configuration.predefinedVariables.overrideFromSet') + '</a></td>';
+                                output += '<td style="text-align: left;"><a class="aui-button aui-button-link aui-style predefinedVariables-variables-set-override">' + AJS.I18n.getText('ru.mail.bamboo.plugins.utils.build.configuration.predefinedVariables.overrideFromSet') + '</a></td>';
                                 $overrideBtn.closest('tr').append(output);
 
                                 $('.custom-build .predefinedVariables-variables-set-override').on('click', handleOverrideVariables);
@@ -191,7 +191,7 @@
                     success: redirectAfterReturningFromDialog,
                     cancel: null,
                     header: AJS.I18n.getText('chain.editParameterisedManualBuild.form.title'),
-                    help: AJS.I18n.getText('ru.mail.bamboo.plugins.build.configuration.predefinedVariables.help')
+                    help: AJS.I18n.getText('ru.mail.bamboo.plugins.utils.build.configuration.predefinedVariables.help')
                 });
         });
 

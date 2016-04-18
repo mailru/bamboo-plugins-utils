@@ -1,4 +1,4 @@
-package ru.mail.bamboo.plugins.report;
+package ru.mail.bamboo.plugins.utils.report;
 
 import com.atlassian.bamboo.reports.charts.BambooReportLineChart;
 import org.jfree.chart.labels.XYToolTipGenerator;
