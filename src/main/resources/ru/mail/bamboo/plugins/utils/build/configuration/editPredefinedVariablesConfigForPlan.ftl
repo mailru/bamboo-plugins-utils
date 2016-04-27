@@ -9,15 +9,15 @@ ${webResourceManager.requireResource("ru.mail.bamboo.plugins.bamboo-utils:predef
     });
 </script>
 [/#if]
-[@ui.bambooSection titleKey="ru.mail.bamboo.plugins.build.configuration.predefinedVariables.title" cssClass="predefinedVariables-edit-panel"]
-<div class="description">${action.getText('ru.mail.bamboo.plugins.build.configuration.predefinedVariables.description')}</div>
+[@ui.bambooSection titleKey="ru.mail.bamboo.plugins.utils.build.configuration.predefinedVariables.title" cssClass="predefinedVariables-edit-panel"]
+<div class="description">${action.getText('ru.mail.bamboo.plugins.utils.build.configuration.predefinedVariables.description')}</div>
 <input type="hidden" name="custom.predefinedVariables"/>
-<a id="predefinedVariables-add-variable-set" class="aui-button aui-button-link">${action.getText('ru.mail.bamboo.plugins.build.configuration.predefinedVariables.addSet')}</a>
+<a id="predefinedVariables-add-variable-set" class="aui-button aui-button-link">${action.getText('ru.mail.bamboo.plugins.utils.build.configuration.predefinedVariables.addSet')}</a>
 [/@ui.bambooSection]
 <script type="text/template" id="predefinedVariables-set">
     <div class="predefinedVariables-variable-set">
         <div class="field-group">
-            <label>${action.getText('ru.mail.bamboo.plugins.build.configuration.predefinedVariables.nameSet')}</label>
+            <label>${action.getText('ru.mail.bamboo.plugins.utils.build.configuration.predefinedVariables.nameSet')}</label>
             <input class="text variable-set-name" type="text" autocomplete="off" value="<%= name %>"/>
             <a class="aui-button aui-button-subtle delete-variable-set" title="Delete" tabindex="-1">
                 <span class="aui-icon aui-icon-small aui-iconfont-delete" title="${action.getText('global.buttons.delete')}">${action.getText('global.buttons.delete')}</span>
@@ -42,7 +42,7 @@ ${webResourceManager.requireResource("ru.mail.bamboo.plugins.bamboo-utils:predef
                     <tfoot>
                     <tr>
                         <td colspan="3">
-                            <a class="aui-button aui-button-link aui-style variable-define">${action.getText('ru.mail.bamboo.plugins.build.configuration.predefinedVariables.defineVariable')}</a>
+                            <a class="aui-button aui-button-link aui-style variable-define">${action.getText('ru.mail.bamboo.plugins.utils.build.configuration.predefinedVariables.defineVariable')}</a>
                         </td>
                     </tr>
                     </tfoot>

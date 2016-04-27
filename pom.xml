@@ -7,7 +7,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ru.mail.bamboo.plugins</groupId>
     <artifactId>bamboo-utils</artifactId>
-    <version>1.0.2.3</version>
+    <version>1.0.3.4</version>
 
     <organization>
         <name>Andrey Molchanov | Mail.Ru Group</name>
