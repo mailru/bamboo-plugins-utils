@@ -64,7 +64,7 @@ ${webResourceManager.requireResource("ru.mail.bamboo.plugins.bamboo-utils:predef
             </select>
         </td>
         <td>
-            <input class="text variable-value" type="text" autocomplete="off" value="<%= value %>"/>
+            <input class="text variable-value" type="text" autocomplete="off" value="<%- value %>"/>
         </td>
         <td class="operations">
             <a class="delete-variable" title="${action.getText('global.buttons.delete')}" tabindex="-1">
